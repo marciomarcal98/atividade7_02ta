@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --main-background: #1e293b;
+    --text-color: #e2e8f0;
+    --nav-background: #0f172a;
+}
+
+/*  */
+body {
+    background: var(--main-background);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column; /* para colocar o header embaixo do nav */
+    min-height: 100svh; /* altura mínima da tela inteira */
+    justify-content: center; /* alinhar no centro do eixo principal (vertical) */
+    align-items: center; /* alinhar no centro do eixo transversal (horizontal) */
+    gap: 30px; /* espaço entre os elementos. só existe com o display: flex */
+}
+
+nav {
+    background: var(--nav-background);
+    width: fit-content;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+ul, li {
+    list-style: none; /* retirar a bolinha que fica do lado da lista */
+}
