@@ -9,6 +9,7 @@
     --main-background: #1e293b;
     --text-color: #e2e8f0;
     --nav-background: #0f172a;
+    --a-hover: #4ade80;
 }
 
 /*  */
@@ -26,10 +27,24 @@ body {
 nav {
     background: var(--nav-background);
     width: fit-content;
-    padding: 24px;
+    padding: 40px;
     border-radius: 10px;
 }
 
 ul, li {
     list-style: none; /* retirar a bolinha que fica do lado da lista */
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    
+}
+
+a:hover {
+    display: block;
+    color: var(--a-hover);
+    transform: scale(1.1);
+    transition: transform .3s;
 }
